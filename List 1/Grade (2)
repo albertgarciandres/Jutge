@@ -23,9 +23,6 @@ def grade(s):
 	else:
 		return('MH')
 	
-	
-	
-	
 
 if __name__ == '__main__':
     import doctest
