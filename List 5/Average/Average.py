@@ -1,17 +1,12 @@
 def main():
-    counter = 0
-    total = 0
+    numbers = input().split()
+    numbers = [float(num) for num in numbers]
     
-    while True:
-        try:
-            a = float(input())
-            counter += 1
-            total += a
-        except ValueError:
-            break
+    total = sum(numbers)
+    average = total / len(numbers)
     
-    result = total / counter
-    print("{:.2f}".format(result))
+    formatted_average = "{:.2f}".format(average)
     
-if __name__ == "__main__":
-    main()
+    print(formatted_average)
+    
+main()
