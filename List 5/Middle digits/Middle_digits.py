@@ -4,7 +4,7 @@ def get_middle_digit(num):
     middle_index = length // 2
     
     if length % 2 == 0:
-        return None  # Even number of digits
+        return '=' # Even number of digits
     
     return int(num_str[middle_index])
 
