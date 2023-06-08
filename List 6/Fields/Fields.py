@@ -1,3 +1,5 @@
+from jutge import read
+
 def find_growings(field):
     m = len(field)
     n = len(field[0])
@@ -34,11 +36,12 @@ def find_growings(field):
 
 while True:
     try:
-        m, n = map(int, input().split())
+        m = read(int)
+        n = read(int)
 
         field = []
         for _ in range(m):
-            row = list(map(int, input().split()))
+            row = read(list)
             field.append(row)
 
         num_growings = find_growings(field)
