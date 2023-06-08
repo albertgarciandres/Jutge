@@ -1,4 +1,4 @@
-def transpose_matrix(m):
+def transpose(m):
     n = len(m)
     for i in range(n):
         for j in range(i+1, n):
